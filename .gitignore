@@ -1,0 +1,8 @@
+node_modules
+dist
+src/assets
+src/aws-exports.js
+static
+public/img
+public/favicon.ico
+public/icon.png
