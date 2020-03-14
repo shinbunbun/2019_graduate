@@ -55,6 +55,9 @@ export default {
         case '2018.10.1 夢庵':
           this.$store.state.pictureCount = 101;
         break;
+        case '2018追加':
+          this.$store.state.pictureCount = 30;
+        break;
         case 'グラウンドその他':
           this.$store.state.pictureCount = 18;
         break;

@@ -73,6 +73,16 @@
         </router-link>
       </div>
       <div class="col-6 col-md-3 py-3">
+        <router-link :to="{name: 'person', params:{person: 'shigeno'}}">
+          <img v-lazy="require('../../static/person/shigeno.jpg')" alt />
+        </router-link>
+      </div>
+      <div class="col-6 col-md-3 py-3">
+        <router-link :to="{name: 'person', params:{person: 'satoryo'}}">
+          <img v-lazy="require('../../static/person/satoryo.jpg')" alt />
+        </router-link>
+      </div>
+      <div class="col-6 col-md-3 py-3">
         <router-link :to="{name: 'person', params:{person: 'ishii'}}">
           <img v-lazy="require('../../static/person/ishii.jpg')" alt />
         </router-link>
@@ -105,6 +115,11 @@
       <div class="col-6 col-md-3 py-3">
         <router-link :to="{name: 'person', params:{person: 'tamama'}}">
           <img v-lazy="require('../../static/person/tamama.jpg')" alt />
+        </router-link>
+      </div>
+      <div class="col-6 col-md-3 py-3">
+        <router-link :to="{name: 'person', params:{person: 'taiyu'}}">
+          <img v-lazy="require('../../static/person/taiyu.jpg')" alt />
         </router-link>
       </div>
       <div class="col-6 col-md-3 py-3">
