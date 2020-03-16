@@ -13,10 +13,9 @@
       <!-- default スロットコンテンツ -->
       <template slot="default">
         <div class="row">
-          <div class="col">
-            <p>{{message}}</p>
+          <div class="col" style="text-align: left;">
+            <p v-html="message" style="padding: 10px"></p>
           </div>
-          <div class="col-auto"></div>
         </div>
       </template>
       <!-- /default -->

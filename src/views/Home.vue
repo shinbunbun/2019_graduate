@@ -14,6 +14,22 @@
     <div class="py-4"></div>
     <div class="row green-background">
       <div class="col">
+        <h4 id="graduationCeremony">Graduation ceremony</h4>
+      </div>
+    </div>
+    <br />
+    <div class="row graduationCeremony-pics">
+      <div class="col"></div>
+      <div class="col-6 col-md-3 py-3">
+        <router-link to="/graduationCeremony">
+          <img v-lazy="require('../../static/graduationCeremony.jpg')" alt />
+        </router-link>
+      </div>
+      <div class="col"></div>
+    </div>
+    <br />
+    <div class="row green-background">
+      <div class="col">
         <h4 id="year">Year</h4>
       </div>
     </div>
@@ -40,12 +56,13 @@
         </router-link>
       </div>
     </div>
-    <div class="py-4"></div>
+    <br />
     <div class="row green-background">
       <div class="col">
         <h4 id="person">Person</h4>
       </div>
     </div>
+    <br />
     <div class="row person-pics">
       <div class="col-6 col-md-3 py-3">
         <router-link :to="{name: 'person', params:{person: 'katoriki'}}">
@@ -205,6 +222,9 @@ img.thumbnail {
   max-width: 100%;
 }
 .person-pics img {
+  max-width: 100%;
+}
+.graduationCeremony-pics img {
   max-width: 100%;
 }
 h4 {

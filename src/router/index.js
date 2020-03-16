@@ -195,7 +195,13 @@ const routes = [{
       isPublic: true
     },
     props: true
-  }
+  },
+  {
+    path: '/graduationCeremony',
+    name: 'graduationCeremony',
+    component: () => import('@/views/graduationCeremony.vue'),
+
+  },
 ];
 
 const router = new VueRouter({
